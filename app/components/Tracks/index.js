@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import styles from './Tracks.css';
+import styles from './index.css';
 
 export default class Tracks extends Component {
   render() {

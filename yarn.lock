@@ -9280,6 +9280,16 @@ react-dom@^16.6.3:
     prop-types "^15.6.2"
     scheduler "^0.11.2"
 
+react-file-processor@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/react-file-processor/-/react-file-processor-0.0.2.tgz#ff09e6123a5531816ad3738d4fa016bff6a4b65f"
+  integrity sha1-/wnmEjpVMYFq03ONT6AWv/aktl8=
+
+react-files@^2.4.8:
+  version "2.4.8"
+  resolved "https://registry.yarnpkg.com/react-files/-/react-files-2.4.8.tgz#780f140e3830923a368ee56e17e13e48b74acad6"
+  integrity sha512-ua1MT5wOT+5qHWa98UxgIA9BhtzzmsgWaacNuuLMs97U/7fhSCSXvvWjG17xGtJN/0bzmkbu04SaKApcAPd1kQ==
+
 react-hot-loader@^4.3.12:
   version "4.3.12"
   resolved "https://registry.npmjs.org/react-hot-loader/-/react-hot-loader-4.3.12.tgz#0d56688884e7330c63a00a17217866280616b07a"

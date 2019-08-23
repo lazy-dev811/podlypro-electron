@@ -264,6 +264,8 @@
     "mb-sketch-ruler": "^1.1.0-dev.26",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
+    "react-file-processor": "^0.0.2",
+    "react-files": "^2.4.8",
     "react-hot-loader": "^4.3.12",
     "react-redux": "^5.1.1",
     "react-router": "^4.3.1",

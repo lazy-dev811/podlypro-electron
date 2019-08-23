@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactRuler from 'mb-sketch-ruler';
-import styles from './Ruler.css';
+import styles from './index.css';
 
 type Props = {};
 
@@ -89,7 +89,7 @@ export default class Ruler extends Component<Props> {
 
     return (
       <div className={styles.wrapper}>
-        <div className={styles.scaleValue}>{`Time zoom: ${scale}`}</div>
+        <div className={styles.scaleValue}>{`ZOOM: ${scale}`}</div>
         <ReactRuler
           thick={thick}
           scale={scale}
