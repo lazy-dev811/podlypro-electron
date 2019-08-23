@@ -1,0 +1,13 @@
+.container {
+  width: 100%;
+}
+
+.container h3 {
+  font-size: 2rem;
+}
+
+.main {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
