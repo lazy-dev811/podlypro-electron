@@ -1,0 +1,5 @@
+.container {
+  grid-area: workstudio;
+  display: flex;
+  flex-direction: column;
+}
