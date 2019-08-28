@@ -26,8 +26,11 @@ export default class Sidebar extends Component {
     this.fileInput.chooseFile();
   };
 
-  handleFileSelect = (e, files) => {
-    console.log(e, files);
+  handleFileSelect = (e, file) => {
+    console.log(e, file);
+    this.audioFileInput = new Audio(file);
+    // this.audioFileInput.load();
+    // this.audioFileInput.play();
   };
 
   insertSoundEffect = () => {

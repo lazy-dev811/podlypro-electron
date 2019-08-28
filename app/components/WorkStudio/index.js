@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 
 import Ruler from './Ruler';
+import Annotation from './Annotation';
+import AudioEdit from './AudioEdit';
+import AudioEffect from './AudioEffect';
 import ControlBar from './ControlBar';
 import styles from './index.css';
 
@@ -15,7 +18,9 @@ export default class WorkStudio extends Component {
     return (
       <div className={styles.container}>
         <Ruler from={from} to={to} />
-        <span>Work Studio</span>
+        <Annotation status="NEW" />
+        <AudioEdit />
+        <AudioEffect />
         <ControlBar />
       </div>
     );
