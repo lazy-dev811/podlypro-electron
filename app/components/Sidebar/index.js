@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import FileProcessor from 'react-file-processor';
+
 import MenuItem from './MenuItem';
+import DropZone from './DropZone';
 
 import styles from './index.css';
 
@@ -8,11 +9,6 @@ type Props = {};
 
 export default class Sidebar extends Component {
   props: Props;
-
-  constructor(props) {
-    super(props);
-    this.audioFileInput = null;
-  }
 
   closeProject = () => {
     console.log('close project');
@@ -22,15 +18,12 @@ export default class Sidebar extends Component {
     console.log('insert text annotation');
   };
 
-  insertAudio = () => {
-    this.fileInput.chooseFile();
+  insertAudio = files => {
+    console.log('insert Audio file: ', files);
   };
 
   handleFileSelect = (e, file) => {
     console.log(e, file);
-    this.audioFileInput = new Audio(file);
-    // this.audioFileInput.load();
-    // this.audioFileInput.play();
   };
 
   insertSoundEffect = () => {
@@ -65,20 +58,11 @@ export default class Sidebar extends Component {
           status={isActiveBtn}
           onClicked={this.insertTextAnnotation}
         />
-        <div className={styles.fileProcessor}>
-          <FileProcessor
-            ref={el => {
-              this.fileInput = el;
-            }}
-            onFileSelect={this.handleFileSelect}
-          >
-            <MenuItem
-              name="Insert audio from file"
-              status={isActiveBtn}
-              onClicked={this.insertAudio}
-            />
-          </FileProcessor>
-        </div>
+        <DropZone
+          name="Insert audio from file"
+          disabled={!isActiveBtn}
+          onFilesAdded={this.insertAudio}
+        />
         <MenuItem
           name="Insert sound effect"
           status={isActiveBtn}
